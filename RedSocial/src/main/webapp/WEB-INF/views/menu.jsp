@@ -190,14 +190,14 @@
               
  <div class="card card-container">
             
-            <p style="align-content: center; margin:auto; display:table; font-size: 20px; color:grey;">Perfil</p>
+            <h1 style="align-content: center; margin:auto; display:table; font-size: 20px; color:grey;">Perfil</h1>
          
                 <span id="reauth-email" class="reauth-email"></span>
-               	<p style=" font-size: 20px; color:grey;">Nombre:</p><p><c:out value="${persona}"/>${persona.getNombre()}</p>
-               	<p style=" font-size: 20px; color:grey;">Apellidos:</p><p><c:out value="${persona}"/>${persona.getApellidos()}</p>
-               	<p style=" font-size: 20px; color:grey;">Dirección:</p><p><c:out value="${persona}"/>${persona.getDireccion()}</p>
-               	<p style=" font-size: 20px; color:grey;">Teléfono:</p><p><c:out value="${persona}"/>${persona.getTelefono()}</p>
-               	<p style=" font-size: 20px; color:grey;">Email:</p><p><c:out value="${persona}"/>${persona.getEmail()}</p>
+               	<h1 style=" font-size: 20px; color:grey;">Nombre:</p><p><c:out value="${persona}"/>${persona.getNombre()}</h1>
+               	<h1 style=" font-size: 20px; color:grey;">Apellidos:</p><p><c:out value="${persona}"/>${persona.getApellidos()}</h1>
+               	<h1 style=" font-size: 20px; color:grey;">Dirección:</p><p><c:out value="${persona}"/>${persona.getDireccion()}</h1>
+               	<h1 style=" font-size: 20px; color:grey;">Teléfono:</p><p><c:out value="${persona}"/>${persona.getTelefono()}</h1>
+               	<h1 style=" font-size: 20px; color:grey;">Email:</p><p><c:out value="${persona}"/>${persona.getEmail()}</h1>
                 <div id="remember" class="checkbox">
                   
                 </div>
@@ -359,7 +359,7 @@
         
  <div class="card card-container">
             
-            <p style="align-content: center; margin:auto; display:table; font-size: 20px; color:grey;">Modifica Tu Perfil</p>
+            <h1 style="align-content: center; margin:auto; display:table; font-size: 20px; color:grey;">Modifica Tu Perfil</h1>
             <form action="modificarUsuario" method="post"  class="form-signin">
                 <span id="reauth-email" class="reauth-email"></span>
                 Email:<input class="form-control" name="aEmail" disabled>${persona.getEmail() } </input>
