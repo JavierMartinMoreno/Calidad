@@ -32,24 +32,24 @@ public class Publicacion {
 	protected String getMensaje() {
 		return mensaje;
 	}
-	public void setMensaje(String mensaje) {
+	private void setMensaje(String mensaje) {
 		this.mensaje = mensaje;
 		creaFecha();
 	}
-	protected String getCompartirCon() {
+	private String getCompartirCon() {
 		return compartirCon;
 	}
-	public void setCompartirCon(String compartirCon) {
+	private void setCompartirCon(String compartirCon) {
 		this.compartirCon = compartirCon;
 		creaFecha();
 	}
 	protected LinkedList<String> getAdjuntos() {
 		return adjuntos;
 	}
-	public void setAdjuntos(LinkedList<String> adjuntos) {
+	private void setAdjuntos(LinkedList<String> adjuntos) {
 		this.adjuntos = adjuntos;
 	}
-	public String getUsername() {
+	private String getUsername() {
 		return username;
 	}
 	public void setUsername(String username) {
@@ -59,7 +59,7 @@ public class Publicacion {
 	public Date getFecha() {
 		return fecha;
 	}
-	public void setFecha(String fecha) {
+	private void setFecha(String fecha) {
 		try {
 			DateFormat format = new SimpleDateFormat("EEE MMM dd HH:mm:ss zzz yyyy", Locale.ENGLISH);
 			this.fecha= format.parse(fecha);
@@ -67,7 +67,7 @@ public class Publicacion {
 			e.printStackTrace();
 		}
 	}
-	protected void creaFecha() {
+	private void creaFecha() {
 		this.fecha=new Date();
 	}
 }
