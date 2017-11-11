@@ -94,12 +94,12 @@ private static final Logger logger = LoggerFactory.getLogger(RegisterController.
 					p = new Persona(password);
 					if(!p.requisitosPassword()) {
 						miMAV.addObject("nombre", nombre);
-				        miMAV.addObject("apellidos", apellidos);
-				        miMAV.addObject("usuario", username);
-				        miMAV.addObject("email", email);
-				        miMAV.addObject("direccion", direccion);
-				        miMAV.addObject("telefono", telefono);
-				        miMAV.addObject("foto", foto);
+						miMAV.addObject("apellidos", apellidos);
+						miMAV.addObject("usuario", username);
+						miMAV.addObject("email", email);
+						miMAV.addObject("direccion", direccion);
+						miMAV.addObject("telefono", telefono);
+						miMAV.addObject("foto", foto);
 						miMAV.addObject("mensaje","No se puede registrar. No se cumple los requisitos de la contraseña.");
 						return miMAV;
 					}else{
